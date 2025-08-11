@@ -1,11 +1,11 @@
- body{
-    background:skyblue;
+body{
+    background: pink;
     color: white;
 }
 .main_div{
     height: 500px;
     width: 400px;
-    border: 2px solid red;
+    border: 2px solid rgb(228, 13, 117);
     margin: auto;
     margin-top: 100px;
 
@@ -32,14 +32,14 @@
     margin-top: 100px;
 }
 .main_div:hover .face{
-    animation: changeface 2s 10 ease-in-out;
+    animation: changeface 2s infinite ease-in-out;
 }
 @keyframes changeface{
-    0%{transform: translateX(20px);}
-    25%{transform: translateX(-20px);}
-    50%{transform: translateX(20px);}
-    75%{transform: translateX(-20px);}
-    100%{transform: translateX(20px);}
+    0%{transform: rotate(180deg);}
+    25%{transform: rotate(-360deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(-360deg);}
+    100%{transform: rotate(180deg);}
 }
 .main_div:hover .leye{
     animation: changeleye 2s 10 ease-in-out;
@@ -53,7 +53,7 @@
     100%{background: red;}
 }
 @keyframes changereye{
-    10%{background: black;}
+    10%{background: pink;}
     50%{background: yellow;}
     100%{background: red;}
 }   
@@ -74,7 +74,7 @@
     margin-right: -50px;
 }
 .main_div:hover .larm{
-    animation: changelarm 2s 10 ease-in-out;
+    animation: changelarm 1s 100 ease-in-out;
 }
 @keyframes changelarm{
     0%{transform: translateY(20px);}
@@ -84,7 +84,7 @@
     100%{transform: translateY(20px);}
 }
 .main_div:hover .rarm{
-    animation: changerarm 2s 10 ease-in-out;
+    animation: changerarm 1s 100 ease-in-out;
 }
 @keyframes changerarm{
     0%{transform: translateY(20px);}
@@ -112,11 +112,11 @@
     animation: changecenter 2s 10 ease-in-out;
 }
 @keyframes changecenter{
-    0%{transform: translateX(20px);}
-    25%{transform: translateX(-20px);}
-    50%{transform: translateX(20px);}
-    75%{transform: translateX(-20px);}
-    100%{transform: translateX(20px);}
+    0%{transform: translateX(45px);}
+    25%{transform: translateX(-45px);}
+    50%{transform: translateX(45px);}
+    75%{transform: translateX(-45px);}
+    100%{transform: translateX(45px);}
 }
 .lleg{
     height: 100px;
@@ -125,9 +125,15 @@
     /* margin-top: 50%; */
     border-radius: 10px;
     margin-left: 10px;
-    margin-right: 20px;
+    margin-right: 20px;  
     /* position: absolute; */
 }
+    .main_div:hover .lleg{
+    animation: changelarm 2s 100 ease-in-out;
+}
+    
+
+
 .rleg{
     height: 100px;
     width: 20px;
@@ -138,9 +144,13 @@
     margin-right: 20px;
     /* position: absolute; */
 }
+    .main_div:hover .rleg{
+    animation: changelarm 2s infinite ease-in-out;
+}
 
 .legs{
     display: flex;
     margin-top: 40px;
     margin-left: 150px;
 }
+   
